@@ -196,7 +196,6 @@ class BertForTokenClassification_MT(BertForTokenClassification):
         # self.span_cl_project = nn.Linear(768, 256)
         self.type_cl_project = nn.Linear(768, 256)
         
-        logger.info(f"Model Setting: {config}")
         config = {
             "fine_type_margin": fine_type_margin,
             "fine_margin_weight": fine_margin_weight,
@@ -926,8 +925,6 @@ class BertForTokenClassification_MT(BertForTokenClassification):
     
     # 计算span时的对比学习loss
     def calc_span_contrastive_loss(self, preds, target):
-        # preds = self.span_cl_project(preds)
-        # 手动去掉 -100 ?
         active_loss_flag = target != -100
         active_preds = preds[active_loss_flag]
         active_target = target[active_loss_flag]
