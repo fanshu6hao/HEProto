@@ -20,10 +20,30 @@ If you find our work useful for your research, please cite the following paper:
       year         = {2023}
     }
 
+# Overview
+<p align="center" width="80%">
+<img src="./framework.png" style="width: 80%">
+</p>
 
-# 🎯 Quick Start
+# File Structure
+    -HEProto
+        -data
+        -dataset
+        -debug
+        -outputs
+        -scripts
+        ...
+
+# Quick Start
 ## Train
     bash script/run.sh
 
 ## Eval
     bash script/pred.sh
+
+# Dataset
+We use the Few-NERD dataset, which you can download from [here](https://ningding97.github.io/fewnerd/) (Sampled Datasets) and put in the ***./dataset*** directory.
+
+# Acknowledge
+Our code is based on [DecomposedMetaNER](https://github.com/microsoft/vert-papers/tree/master/papers/DecomposedMetaNER), thank you very much for their great work!
+
