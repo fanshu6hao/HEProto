@@ -1,4 +1,7 @@
 # HEProto
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/heproto-a-hierarchical-enhancing-protonet/few-shot-ner-on-few-nerd-inter)](https://paperswithcode.com/sota/few-shot-ner-on-few-nerd-inter?p=heproto-a-hierarchical-enhancing-protonet) &nbsp;
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/heproto-a-hierarchical-enhancing-protonet/few-shot-ner-on-few-nerd-intra)](https://paperswithcode.com/sota/few-shot-ner-on-few-nerd-intra?p=heproto-a-hierarchical-enhancing-protonet)
+
 The source code for paper:
 
 [HEProto: A Hierarchical Enhancing ProtoNet based on Multi-Task Learning for Few-shot Named Entity Recognition](https://dl.acm.org/doi/abs/10.1145/3583780.3614908)  (full paper of CIKM '23)
@@ -34,15 +37,15 @@ If you find our work useful for your research, please cite the following paper:
         -scripts
         ...
 
+# Dataset
+We use the ***[Few-NERD](https://github.com/thunlp/Few-NERD) Arxiv V6 Version*** dataset, which you can download from [here](https://ningding97.github.io/fewnerd/) (Sampled Datasets) and put in the ***./dataset*** directory.
+
 # Quick Start
 ## Train
     bash script/run.sh
 
 ## Eval
     bash script/pred.sh
-
-# Dataset
-We use the Few-NERD dataset, which you can download from [here](https://ningding97.github.io/fewnerd/) (Sampled Datasets) and put in the ***./dataset*** directory.
 
 # Acknowledge
 Our code is based on [DecomposedMetaNER](https://github.com/microsoft/vert-papers/tree/master/papers/DecomposedMetaNER), thank you very much for their great work!
