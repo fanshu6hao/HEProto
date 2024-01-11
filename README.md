@@ -25,7 +25,7 @@ If you find our work useful for your research, please cite the following paper:
 
 # Overview
 <p align="center" width="80%">
-<img src="./framework.png" style="width: 80%">
+    <img src="./framework.png" style="width: 90%">
 </p>
 
 # File Structure
@@ -38,7 +38,7 @@ If you find our work useful for your research, please cite the following paper:
         ...
 
 # Dataset
-We use the ***[Few-NERD](https://github.com/thunlp/Few-NERD) Arxiv V6 Version*** dataset, which you can download from [here](https://ningding97.github.io/fewnerd/) (Sampled Datasets) and put in the ***./dataset*** directory.
+We use the ***[Few-NERD](https://github.com/thunlp/Few-NERD) Arxiv V6 Version*** dataset, which you can download from the [website](https://ningding97.github.io/fewnerd/) (Sampled Datasets) and put in the <code>./dataset</code> directory.
 
 # Quick Start
 ## Train
@@ -47,6 +47,17 @@ We use the ***[Few-NERD](https://github.com/thunlp/Few-NERD) Arxiv V6 Version***
 ## Eval
     bash script/pred.sh
 
+# Results
+## Few-NERD (Inter)
+<p align="center" width="100%">
+    <img src="./Few-NERD-Inter-Result.png" style="width: 100%">
+</p>
+
+## Few-NERD (Intra)
+<p align="center" width="100%">
+    <img src="./Few-NERD-Intra-Result.png" style="width: 100%">
+</p>
+
 # Acknowledge
-Our code is based on [DecomposedMetaNER](https://github.com/microsoft/vert-papers/tree/master/papers/DecomposedMetaNER), thank you very much for their great work!
+Our code is based on [DecomposedMetaNER](https://github.com/microsoft/vert-papers/tree/master/papers/DecomposedMetaNER), thanks very much for their great work!
 
